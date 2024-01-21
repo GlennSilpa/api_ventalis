@@ -13,11 +13,11 @@ if ($resultOfQuery->num_rows > 0) {
 
     echo json_encode(
         array(
-            "success" => true,  // Corrected the typo here
-            "produitsItemsData" => $produitsItemsRecord,
+            "success" => true,
+            "ProduitsItemsData" => $produitsItemsRecord,  // Corrected the key here
         )
     );
 } else {
-    echo json_encode(array("success" => false));  // Corrected the typo here
+    echo json_encode(array("success" => false));
 }
 ?>
