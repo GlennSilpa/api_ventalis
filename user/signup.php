@@ -10,7 +10,7 @@ $userPassword = md5($_POST['password']);
 $userPrenom = $_POST['prenom'];
 $userEmail = $_POST['email'];
 
-$sqlQuery = "INSERT INTO utilisateurs_table (username, entreprise, password, prenom, email) VALUES ('$userName', '$userEntreprise', '$userPassword', '$userPrenom', '$userEmail')";
+$sqlQuery = "INSERT INTO utilisateurs_table (`username`, `entreprise`, `password`, `prenom`, `email`) VALUES ('$userName', '$userEntreprise', '$userPassword', '$userPrenom', '$userEmail')";
 
 $resultOfQuery = $connectNow->query($sqlQuery);
 
